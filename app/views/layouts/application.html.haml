@@ -1,0 +1,21 @@
+
+!!!
+%html{ lang: "en" }
+	%head
+		%title
+			VisitorTracker
+		/ Render the page meta tags
+		= csrf_meta_tags
+
+		/ Render the stylesheet and javascripts we need for the site:
+		= stylesheet_link_tag 'application', media: "all"
+		= javascript_include_tag 'application'
+
+	%body#body{ role: 'main', class: 'current_page_classes' }
+		/ Canvas container for mobile menu bar
+		#wrap
+			#main-content
+				
+				= yield
+
+    

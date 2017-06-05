@@ -1,0 +1,8 @@
+.col-md-12
+	%h5 Upload data
+	.row
+		-@rooms.each_with_index do  |v, i|
+			-next if v.nil? # no one entered the room
+			-total_time = v.map(&:values).flatten.reduce(:+)
+			="Room #{i}, #{total_time/v.size} minute average visit, #{v.size} visitor(s) total"
+			%br

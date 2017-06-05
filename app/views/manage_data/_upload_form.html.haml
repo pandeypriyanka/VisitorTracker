@@ -1,0 +1,8 @@
+
+.col-md-12
+  %h5 Upload File
+  .row
+    = form_tag manage_data_path, method: 'post', data: { remote: true} , multipart: true do
+      .col-md-6
+        = file_field_tag :uploaded_data, :autocomplete => 'off'
+      = submit_tag 'Upload'
