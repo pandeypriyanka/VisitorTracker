@@ -5,24 +5,57 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version ruby 2.1.7
 
-* System dependencies
+* Data format -
+Sample Input-
+36
+11 0 I 347
+13 1 I 307
+15 2 I 334
+6 3 I 334
+9 4 I 334
+2 5 I 334
+6 2 I 334
+11 7 I 334
+1 8 I 334
+11 0 O 376
+13 1 O 321
+15 2 O 389
+6  3 O 412
+9 4 O 418
+2 5 O 414
+2 6 O 349
+11 7 O 418
+1 8 O 418
+12 0 I 437
+28 1 I 343
+32 2 I 408
+15 3 I 458
+18 4 I 424
+26 5 I 442
+7 6 I 435
+19 7 I 456
+19 8 I 450
+12 0 O 455
+28 1 O 374
+32 2 O 495
+15 3 O 462
+18 4 O 500
+26 5 O 479
+7 6 7 493
+19 7 O 471
+19 8 O 458
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sample Output -
+Room 0, 23 minute average visit, 2 visitor(s) total 
+Room 1, 22 minute average visit, 2 visitor(s) total 
+Room 2, 158 minute average visit, 3 visitor(s) total 
+Room 3, 41 minute average visit, 2 visitor(s) total 
+Room 4, 80 minute average visit, 2 visitor(s) total 
+Room 5, 58 minute average visit, 2 visitor(s) total 
+Room 6, 203 minute average visit, 2 visitor(s) total 
+Room 7, 49 minute average visit, 2 visitor(s) total 
+Room 8, 46 minute average visit, 2 visitor(s) total 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
